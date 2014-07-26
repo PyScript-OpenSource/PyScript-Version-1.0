@@ -31,6 +31,14 @@ Documentation
 		
 		//Changes an int to a  string.
 		
+		scr.delay(sec)
+		
+		//will delay program for the amount of seconds specified float data allowed.
+		
+		scr.play(file)
+		
+		//Can play wav formatted sound.
+		
 	tess
 	
 	//Create a tess object first
@@ -60,8 +68,4 @@ Documentation
 		
 			//Will put pen up.
 			
-	time
-		time.delay(sec)
-		
-		//will delay program for the amount of seconds specified float data allowed.
 	
