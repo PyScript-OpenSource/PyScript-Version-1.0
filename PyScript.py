@@ -1,5 +1,6 @@
 import turtle
 import webbrowser
+from time import *
 class scr:
     def say(text):
         print(text)
@@ -18,7 +19,10 @@ class scr:
         f = open(file,'w')
         f.write(message)
         f.close()
-        
+    def delay(s):
+        time.sleep(s)
+    def play(wav):
+        winsound.PlaySound(wav, winsound.SND_FILENAME)
 class tess():
     def __init__(self):
         self.tess = turtle.Turtle()
