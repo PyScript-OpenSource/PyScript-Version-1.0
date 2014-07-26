@@ -1,4 +1,5 @@
 import turtle
+import webbrowser
 class scr:
     def say(text):
         print(text)
@@ -8,6 +9,16 @@ class scr:
         return str(thing)
     def get(text):
         return input(text)
+    def webpage(message,file):
+        f = open(file,'w')
+        f.write(message)
+        f.close()
+        webbrowser.open(file)
+    def makePage(message,file):
+        f = open(file,'w')
+        f.write(message)
+        f.close()
+        
 class tess():
     def __init__(self):
         self.tess = turtle.Turtle()
