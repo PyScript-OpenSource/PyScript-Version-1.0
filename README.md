@@ -60,5 +60,8 @@ Documentation
 		
 			//Will put pen up.
 			
+	time
+		time.delay(sec)
 		
+		//will delay program for the amount of seconds specified float data allowed.
 	
