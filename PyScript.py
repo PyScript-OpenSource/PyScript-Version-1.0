@@ -29,3 +29,7 @@ class tess():
 
     def noPen(self):
         self.tess.penup()
+
+class time:
+    def delay(sec):
+        time.sleep(sec)
