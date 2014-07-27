@@ -14,5 +14,10 @@ weapon = rpg.weapon
 
 BattleAxe = weapon("Battle Axe",35,1,0)
 
+rpg.equip.weapon(Si,BattleAxe)
+
+rpg.attack.weaponAtk(Si,guy)
+print(guy.health)
+
 rpg.attack.weaponAtk(Si,guy)
 print(guy.health)

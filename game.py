@@ -19,8 +19,9 @@ class rpg():
                 if target.health < 1:
                     print(caster+" killed "+target)
         def weaponAtk(character,target):
-            target.health -= character.inventory[0].damage/(defe/2)
-            
+            target.health -= character.inventory[0].damage/(character.defe/2)
+            if target.health < 1:
+                    print(character.name+" killed "+target.name)
     class weapon():
         def __init__(self,name,damage,lvl,lvlR):
             self.name=name
@@ -33,6 +34,7 @@ class rpg():
             self.defe = defe
     class character():
         def __init__(self,name,health,stats):
+            self.name = name
             self.mana = stats[0]
             self.defe = stats[1]
             self.spd = stats[2]
@@ -53,8 +55,8 @@ class rpg():
             self.defe += self.inventory[1].defe
     class equip():
         def weapon(character,weapon):
-            if charecter.level >= weapon:
+            if character.level > weapon.lvlR-1:
                 character.inventory[0] = weapon
-        def armor(charecter,armor):
+        def armor(character,armor):
             character.inventory[1] = armor
             
