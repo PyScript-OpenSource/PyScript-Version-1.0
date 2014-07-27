@@ -19,7 +19,7 @@ class rpg():
                 if target.health < 1:
                     print(caster+" killed "+target)
         def weaponAtk(character,target):
-            target.health -= character[0].damage/(defe/2)
+            target.health -= character.inventory[0].damage/(defe/2)
             
     class weapon():
         def __init__(self,name,damage,lvl,lvlR):

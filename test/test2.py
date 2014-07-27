@@ -1,19 +1,18 @@
-from PyScript import scr,tess
-import time
-t = tess()
-screen = t.tess.getscreen()
+from PyScript import scr
+from game import rpg
+from tkinter import *
 
-screen.bgcolor('red')
-t.go(100)
-t.left(90)
-t.go(100)
-t.left(90)
-t.go(100)
-t.left(90)
-t.go(100)
-screen.bgcolor('pink')
-t.noPen()
-t.go(60)
-t.pen()
-t.go(30)
-screen.mainloop()
+stats = [50,3,3,3,3]
+stats2 = [15,2,4,5,2]
+
+person = rpg.character
+
+Si=person("Simon",100,stats)
+guy=person("Guy",45,stats2)
+
+weapon = rpg.weapon
+
+BattleAxe = weapon("Battle Axe",35,1,0)
+
+rpg.attack.weaponAtk(Si,guy)
+print(guy.health)
