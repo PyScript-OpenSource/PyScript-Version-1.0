@@ -1,11 +1,11 @@
-PyScript
+scrpy
 ========
 
 A programming language based off Python. It has a PyScript library for Python it has a compiler based of cx_freeze. It compiles to EXE.
 
 Installation
 ============
-To install place the PyScript.py and the compilePyScript.py file in your Lib directory in python 3.2.5
+To install place the scrpy.py and the compilescrpy.py file in your Lib directory in python 3.2.5
 
 Documentation
 =============

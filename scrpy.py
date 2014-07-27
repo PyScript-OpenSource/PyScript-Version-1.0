@@ -2,7 +2,7 @@ import turtle
 import webbrowser
 from time import *
 from random import randint
-import os
+import subprocess
 class scr:
     def say(text):
         print(text)
@@ -32,7 +32,9 @@ class scr:
         f.write(message)
         f.close()
     def exe(location):
-        os.startfile("C:\Users\Simon\Desktop\test\helloWorld.exe")
+        cmd = location
+        process = subprocess.Popen(cmd, stdout=subprocess.PIPE, creationflags=0x08000000)
+        process.wait()
 class tess():
     def __init__(self):
         self.tess = turtle.Turtle()

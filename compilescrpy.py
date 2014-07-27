@@ -1,6 +1,6 @@
 import sys
 from cx_Freeze import setup, Executable
-class PyScript:
+class scrpy:
     def compileExe(name,version,description,file,appType):
         if appType == 'g':
             setup(

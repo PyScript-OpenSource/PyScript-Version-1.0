@@ -1,4 +1,4 @@
-from PyScript import scr
+from scrpy import scr
 from game import rpg
 from tkinter import *
 
