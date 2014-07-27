@@ -1,6 +1,7 @@
 import turtle
 import webbrowser
 from time import *
+from random import randint
 class scr:
     def say(text):
         print(text)
@@ -19,10 +20,16 @@ class scr:
         f = open(file,'w')
         f.write(message)
         f.close()
+    def host(file):
+        webbrowser.open(file)
     def delay(s):
         time.sleep(s)
     def play(wav):
         winsound.PlaySound(wav, winsound.SND_FILENAME)
+    def printF(message,file):
+        f = open(file,'w')
+        f.write(message)
+        f.close()
 class tess():
     def __init__(self):
         self.tess = turtle.Turtle()
@@ -44,7 +51,3 @@ class tess():
 
     def noPen(self):
         self.tess.penup()
-
-class time:
-    def delay(sec):
-        time.sleep(sec)
