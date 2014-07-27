@@ -2,6 +2,7 @@ import turtle
 import webbrowser
 from time import *
 from random import randint
+import os
 class scr:
     def say(text):
         print(text)
@@ -30,6 +31,8 @@ class scr:
         f = open(file,'w')
         f.write(message)
         f.close()
+    def exe(location):
+        os.startfile("C:\Users\Simon\Desktop\test\helloWorld.exe")
 class tess():
     def __init__(self):
         self.tess = turtle.Turtle()

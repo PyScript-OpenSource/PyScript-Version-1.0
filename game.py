@@ -16,10 +16,12 @@ class rpg():
             else:
                 target.health-=magic.damage
                 print(magic.text)
+                print("Target\'s Health: ",+str(target.health) 
                 if target.health < 1:
                     print(caster+" killed "+target)
         def weaponAtk(character,target):
             target.health -= character.inventory[0].damage/(character.defe/2)
+            print("Target\'s Health: ",+str(target.health) 
             if target.health < 1:
                     print(character.name+" killed "+target.name)
     class weapon():
